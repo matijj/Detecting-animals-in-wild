@@ -99,6 +99,8 @@ Here is how to run app:
     <br>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="1-endpoint-end.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/1-endpoint-end.jpg" width="50%">
+
 </div>
 
 
