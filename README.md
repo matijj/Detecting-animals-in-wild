@@ -17,20 +17,22 @@ The "Detecting Animals in Wildlife" project is a solution designed to automate t
 
 # Requirements
 **Python Version**: 3.10.12
-* fastapi==0.110.0
-* uvicorn==0.29.0
-* numpy==1.26.4
-* pandas==2.2.1
-* opencv-python==4.9.0.80
-* pillow==10.2.0
-* matplotlib==3.8.3
-* seaborn==0.13.2
-* pydantic==2.6.4
-* httpx==0.27.0
-* sqlalchemy==1.4.37  # if using databases
-* pytest==8.1.1  # for testing
 
-
+- aiofiles==23.2.1
+- asynctest==0.13.0
+- fastapi==0.111.0
+- httpx==0.27.0
+- matplotlib==3.8.3
+- moviepy==1.0.3
+- numpy==1.26.4
+- opencv_python==4.9.0.80
+- opencv_python_headless==4.9.0.80
+- pandas==2.2.2
+- pydantic==2.7.1
+- pytest==8.1.1
+- starlette==0.37.2
+- ultralytics==8.1.29
+- openpyxl
 
 
 # DataSet
