@@ -55,6 +55,11 @@ from pydantic import BaseModel, Field
 app = FastAPI()
 
 
+temp_predictions_dir = 'temp_predictions_file'
+os.makedirs(temp_predictions_dir, exist_ok=True)
+
+
+
 # Mount static directories to serve static files and downloads
 app.mount("/download", StaticFiles(directory=temp_predictions_dir), name="download")
 app.mount("/static", StaticFiles(directory=static_files_dir), name="static")
