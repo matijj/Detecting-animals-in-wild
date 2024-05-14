@@ -111,10 +111,6 @@ Here is how to run app:
 
 **Parameters**:
 - `file` (UploadFile): The video file in MP4 or AVI format.
-- `preference` (str): User preferences for processing video. Options include:
-  - `keep_summary`: Generate a summary of detections.
-  - `generate_annotated_video`: Create an annotated video.
-  - `keep_detailed_results`: Generate detailed results of detections.
 - `every_n_frame` (int): Specifies the frequency of frames to process 
 
 
