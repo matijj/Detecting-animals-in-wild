@@ -3,13 +3,14 @@ This repository contains a model and a sample application that utilizes object d
 
 
 <div align="center" style="padding: 10px;">
-    <img src="racoon-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="turkey-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="deer-GIF.gif" width="30%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/racoon-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/turkey-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/deer-GIF.gif" width="30%">
 </div>
 <div align="center" style="padding-bottom: 10px;">
     <p>Videos sourced from the <a href="https://www.youtube.com/@MammalCam" target="_blank">MammalCam YouTube channel</a>.</p>
 </div>
+
 
 # Abstract
 The "Detecting Animals in Wildlife" project is a solution designed to automate the identification and tracking of animals in wildlife footage. Utilizing state-of-the-art YOLOv8 object detection technology, this application aims to enhance the efficiency of wildlife monitoring, which is traditionally done manually through wildlife cameras, possibly saving a lot of time.
@@ -59,12 +60,11 @@ The dataset consists of images captured under various conditions (day/night, dif
 - Raccoon 954 
 - Coyote 900 
 
+
 <div align="center" style="padding: 10px;">
-    <img src="https://github.com/matijj/Detecting-animals-in-wildlife/blob/main/image_distribution_pie_chart.png?raw=true" style="width: 30%; ">
-    <img src="https://github.com/matijj/Detecting-animals-in-wildlife/blob/main/animal_category_distribution_2.png?raw=true" style="width: 50%; ">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/image_distribution_pie_chart.png" style="width: 30%; ">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/animal_category_distribution_2.png" style="width: 50%; ">
 </div>
-
-
 
 
 # Augmentations applied:
@@ -94,16 +94,13 @@ Here is how to run app:
 
 ### Endpoint 1: Upload a Video for Wildlife Tracking
 
+
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
-    <img src="1-endpoint-start.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/1-endpoint-start.jpg" width="50%">
     <br>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="1-endpoint-end.jpg" width="50%">
     <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/1-endpoint-end.jpg" width="50%">
-
 </div>
-
-
 
 
 **Description**: Upload a video file for automated wildlife tracking. Specify frame processing frequency.
@@ -136,14 +133,15 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
 ### Endpoint 2: Upload Multiple Videos
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
-    <img src="2-endpoint-start.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-start.jpg" width="50%">
     <br>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="2-endpoint-end.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-end.jpg" width="50%">
     <br>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="2-endpoint-zip-output.jpg" width="70%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-zip-output.jpg" width="70%">
 </div>
+
 
 
 
