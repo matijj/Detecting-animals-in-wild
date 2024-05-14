@@ -55,6 +55,8 @@ from pydantic import BaseModel, Field
 app = FastAPI()
 
 
+# Create a directory for temporary predictions if it doesn't already exist
+# This directory is used to store files temporarily during processing
 temp_predictions_dir = 'temp_predictions_file'
 os.makedirs(temp_predictions_dir, exist_ok=True)
 
