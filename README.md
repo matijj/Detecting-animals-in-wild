@@ -64,8 +64,8 @@ The dataset consists of images captured under various conditions (day/night, dif
 
 
 <div align="center" style="padding: 10px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/image_distribution_pie_chart.png" style="width: 30%; ">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/animal_category_distribution_2.png" style="width: 50%; ">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/image_distribution_pie_chart.png" style="width: 30%; ">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/animal_category_distribution_2.png" style="width: 50%; ">
 </div>
 
 
@@ -98,10 +98,10 @@ Here is how to run app:
 
 
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/1-endpoint-start.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/1-endpoint-end.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
 </div>
 
 
@@ -131,13 +131,13 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
 ### Endpoint 2: Upload Multiple Videos
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-start.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
     <br>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-end.jpg" width="50%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
     <br>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/2-endpoint-zip-output.jpg" width="70%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
 </div>
 
 
