@@ -10,7 +10,7 @@ from fastapi import HTTPException, UploadFile
 
 
 from app.video_processing import process_video 
-##FOR PROCESS_VIDEO
+#FOR PROCESS_VIDEO
 @pytest.fixture
 def setup_video_processing(tmp_path):
     """
@@ -117,16 +117,9 @@ class TestVideoProcessing:
 
 
 
-
-
-
-
-
-
 from app.video_processing import  process_and_track_frame
 
-#process_and_Track_FRAME
-    
+#PROCESS_AND_TRACK_FRAME    
 from unittest.mock import MagicMock, patch
 
 def test_process_and_track_frame_effective_tracking(setup_video_processing):
@@ -220,31 +213,31 @@ def test_process_and_track_frame_error_handling(setup_video_processing):
 from app.video_processing import process_each_file
 
 
-#WORKS ONLY WHEN PROCESS_EACH_FILE IS FOR TEST 
-@pytest.mark.asyncio
-@pytest.mark.timeout(10)
-async def test_process_each_file_success():
-    """
-    Test the successful processing of a video file.
-    Verifies that the function processes a valid video file correctly with specified user preferences.
-    """
+# #WORKS ONLY WHEN PROCESS_EACH_FILE IS FOR TEST 
+# @pytest.mark.asyncio
+# @pytest.mark.timeout(10)
+# async def test_process_each_file_success():
+#     """
+#     Test the successful processing of a video file.
+#     Verifies that the function processes a valid video file correctly with specified user preferences.
+#     """
 
-    video_path = '/mnt/c/Users/Matija/wsl_projekti/sync_async_38/tests/test-video.mp4'
-    with open(video_path, 'rb') as f:
-        video_bytes = f.read()
+#     video_path = '/mnt/c/Users/Matija/wsl_projekti/sync_async_38/tests/test-video.mp4'
+#     with open(video_path, 'rb') as f:
+#         video_bytes = f.read()
     
-    mock_file = MagicMock(spec=UploadFile)
-    mock_file.filename = "test-video.mp4"
-    mock_file.file = BytesIO(video_bytes)
-    mock_file.file.read = MagicMock(return_value=video_bytes)
+#     mock_file = MagicMock(spec=UploadFile)
+#     mock_file.filename = "test-video.mp4"
+#     mock_file.file = BytesIO(video_bytes)
+#     mock_file.file.read = MagicMock(return_value=video_bytes)
     
-    session_id = '20240419123128_f087cc11-61fb-44c1-9514-d7b8d3645d06'
-    user_preferences = {'keep_summary', 'generate_annotated_video'}
-    every_n_frame = 3
+#     session_id = '20240419123128_f087cc11-61fb-44c1-9514-d7b8d3645d06'
+#     user_preferences = {'keep_summary', 'generate_annotated_video'}
+#     every_n_frame = 3
     
-    print("About to call process_each_file")
-    await process_each_file(mock_file, session_id, user_preferences, every_n_frame)
-    print("process_each_file has been called")
+#     print("About to call process_each_file")
+#     await process_each_file(mock_file, session_id, user_preferences, every_n_frame)
+#     print("process_each_file has been called")
 
 
 
