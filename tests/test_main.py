@@ -66,13 +66,8 @@ def test_upload_form(client):
     assert '<h1>Upload Multiple Videos</h1>' in response.text
     assert '<input type="file" name="files" class="file-input" multiple required />' in response.text
 
-#---------------------------------------------------------------------------------------
-#
 
 
-#---------------------------------------------------------------------------------------
-
-#
 #UPLOAD_AND_TRACK
 @pytest.mark.usefixtures("client")  # Ensures the client fixture is used for all tests in this class
 class TestUploadAndTrack:
@@ -145,18 +140,7 @@ class TestUploadAndTrack:
 
 
 
-
-
-##UPLOAD_AND_TRACK_MULTIPLE
-
-#
-#
-##---------------------------------------------------------------------------------------
-#
-
 #UPLOAD_AND_TRACK_MULTIPLE
-
-##UPLOAD_AND_TRACK_MULTIPLE
 class TestUploadAndTrackMultiple:
     @pytest.mark.asyncio
     async def test_upload_with_no_files(self, client):
@@ -229,10 +213,7 @@ class TestUploadAndTrackMultiple:
 
 
 
-
-#------------------------------------------------------------------------------------
 #SHUTDOWN
-
 @app.on_event("shutdown")
 async def shutdown_event():
 # This function is executed when the FastAPI application is shutting down.
