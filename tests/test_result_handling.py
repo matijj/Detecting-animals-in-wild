@@ -8,9 +8,9 @@ from unittest.mock import MagicMock, call, mock_open, patch
 
 
 from app.result_handling import should_keep_file
-#
 
-##SHOULD KEEP FILE
+
+#SHOULD KEEP FILE
 class TestShouldKeepFile:
     """
     The TestShouldKeepFile class tests the functionality of the should_keep_file function,
@@ -135,7 +135,7 @@ class TestModifyResultBasedOnPreferences:
 
 
 
-##HANDLE_FILES_FOR_SINGLE
+#HANDLE_FILES_FOR_SINGLE
 from app.result_handling import handle_files_for_single
 
 class TestVideoProcessingSingle(unittest.TestCase):
@@ -289,8 +289,7 @@ class TestVideoProcessingSingle(unittest.TestCase):
 
 
 
-##HANDLE_FILES_FOR_MULTIPLE
-
+#HANDLE_FILES_FOR_MULTIPLE
 from app.result_handling import handle_files_for_multiple
 
 class TestFileHandlingMultiple(unittest.TestCase):
