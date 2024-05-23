@@ -3,7 +3,7 @@ This repository contains a model and a sample application that utilizes object d
 
 
 <div align="center" style="padding: 10px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/racoon-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/racoon.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/turkey-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/deer-GIF.gif" width="30%">
 </div>
