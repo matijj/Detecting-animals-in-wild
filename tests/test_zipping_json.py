@@ -6,30 +6,6 @@ from unittest.mock import MagicMock, call, mock_open, patch
 from zipfile import ZIP_DEFLATED, ZipFile
 
 
-#import pytest
-#
-#
-#import io
-#import json
-#from unittest.mock import mock_open, patch, MagicMock
-#import zipfile
-#from zipfile import ZipFile, ZIP_DEFLATED
-#import pytest
-#import json
-#import io
-#from unittest.mock import patch, mock_open, MagicMock
-#from zipfile import ZipFile, ZIP_DEFLATED
-#from unittest.mock import patch, mock_open
-#
-## Assuming `save_manifest` is in a module named `zip_json`
-#from app.zipping_json import save_manifest
-#from unittest.mock import mock_open, patch, call
-#import json
-#
-#
-#import pytest
-#from unittest.mock import mock_open, patch, MagicMock
-#import json
 
 
 
@@ -195,18 +171,6 @@ def test_zip_creation_manifest_not_found():
 
     # Check the exception message to match the expected FileNotFoundError message
     assert "No such file or directory" in str(excinfo.value), "FileNotFoundError not raised for missing manifest"
-
-
-#def test_zip_creation_manifest_not_found():
-#    session_id = "123456789"
-#    temp_dir = "/fake/dir"
-#    
-#    # Patch the os.path.exists to return False simulating file not found
-#    with patch("os.path.exists", return_value=False), \
-#         pytest.raises(FileNotFoundError) as excinfo:
-#        create_zip_from_manifest(session_id, temp_dir)
-#    
-#    assert "Manifest file not found" in str(excinfo.value), "FileNotFoundError not raised for missing manifest"
 
 
 
