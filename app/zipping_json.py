@@ -151,36 +151,3 @@ def create_zip_from_manifest(session_id, temp_predictions_dir):
         raise
 
 
-
-
-#        with zipfile.ZipFile(zip_bytes_io, 'w', zipfile.ZIP_DEFLATED) as zipped:
-#            for summary_file in ["overall_summary.csv", "overall_summary.xlsx"]:
-#                summary_path = os.path.join(temp_predictions_dir, summary_file)
-#                if os.path.exists(summary_path):
-#                    zipped.write(summary_path, arcname=os.path.basename(summary_path))
-#
-#            for status, files in files_by_status.items():
-#                if files:
-#                    for file_info in files:
-#                        path_parts = file_info['path'].split('_')
-#                        video_folder_name = path_parts[2] if len(path_parts) >= 3 else "misc"
-#                        video_folder = os.path.join(status, video_folder_name)
-#                        arcname = os.path.join(video_folder, os.path.basename(file_info['path']))
-#                        file_path = os.path.join(temp_predictions_dir, file_info['path'])
-#
-#                        if os.path.exists(file_path):
-#                            zipped.write(file_path, arcname=arcname)
-#
-#        zip_bytes_io.seek(0)
-#        return zip_bytes_io
-#
-#    except FileNotFoundError:
-#        logging.error(f"Manifest file not found for session {session_id}.")
-#        raise
-#    except IOError as e:
-#        logging.error(f"File I/O error occurred while creating ZIP for session {session_id}: {e}")
-#        raise
-#    except Exception as e:
-#        logging.error(f"An unexpected error occurred while creating the ZIP file for session {session_id}: {e}")
-#        raise
-#
