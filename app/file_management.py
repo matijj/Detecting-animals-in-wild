@@ -44,27 +44,44 @@ def cleanup_directory(directory):
     logging.info(f"Cleanup completed for directory {directory}")
 
 
+#FOR PRODUCTION
+# This production version of save_uploaded_file uses shutil.copyfileobj to transfer data from the file object to disk.
+# This method efficiently handles large files by transferring data in chunks, minimizing memory usage and enhancing performance.
 
-#
-##3. File Management and Cleanup
-#def cleanup_directory(directory):
-#    for filename in os.listdir(directory):
-#        file_path = os.path.join(directory, filename)
-#        try:
-#            if os.path.isfile(file_path) or os.path.islink(file_path):
-#                os.unlink(file_path)
-#            elif os.path.isdir(file_path):
-#                shutil.rmtree(file_path)
-#        except Exception as e:
-#            logging.error(f"Failed to delete {file_path}. Reason: {e}")
-#
+def save_uploaded_file(file, session_id):
+    """
+    Saves an uploaded video file to the filesystem under a session-specific directory.
+
+    This function is a critical step in handling file uploads, ensuring that each uploaded file is stored securely and uniquely identified by the session ID and its filename before processing.
+
+    Parameters:
+    - file (UploadFile): The file uploaded by the user.
+    - session_id (str): The session identifier used to create a unique storage path.
+
+    Returns:
+    - str: The path where the file has been saved.
+
+    Raises:
+    - HTTPException: If the file fails to save due to I/O errors or other filesystem-related issues.
+    """
+
+    try:
+        save_path = os.path.join(temp_predictions_dir, f'{session_id}_{file.filename}')
+        with open(save_path, 'wb') as buffer:
+            shutil.copyfileobj(file.file, buffer)
+        return save_path
+    except IOError as e:
+        logging.error(f"Failed to save file {file.filename} for session {session_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to save file due to I/O error.")
+    except Exception as e:
+        logging.error(f"Unexpected error occurred when saving file {file.filename} for session {session_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"An unexpected error occurred when saving the file.")
+
+
 
 #FOR TESTS
 # This version of save_uploaded_file is specifically used for testing purposes.
 # It reads all bytes from the file into memory to simplify mocking and ensure complete control over file I/O.
-# This approach is useful in a controlled test environment where the focus is on functionality and not on optimizing resources.
-# It provides a straightforward way to simulate file handling by bypassing the complexity of chunk-based data transfers.
-
 
 #def save_uploaded_file(file, session_id):
 #    try:
@@ -99,42 +116,3 @@ def cleanup_directory(directory):
 #        raise HTTPException(status_code=500, detail="An unexpected error occurred when saving the file.")
 #
 
-
-
-#
-#FOR PRODUCTION
-# This production version of save_uploaded_file uses shutil.copyfileobj to transfer data from the file object to disk.
-# This method efficiently handles large files by transferring data in chunks, minimizing memory usage and enhancing performance.
-# Suitable for production environments where resource optimization and handling of large file transfers are critical.
-
-def save_uploaded_file(file, session_id):
-    """
-    Saves an uploaded video file to the filesystem under a session-specific directory.
-
-    This function is a critical step in handling file uploads, ensuring that each uploaded file is stored securely and uniquely identified by the session ID and its filename before processing.
-
-    Parameters:
-    - file (UploadFile): The file uploaded by the user.
-    - session_id (str): The session identifier used to create a unique storage path.
-
-    Returns:
-    - str: The path where the file has been saved.
-
-    Raises:
-    - HTTPException: If the file fails to save due to I/O errors or other filesystem-related issues.
-    """
-
-    try:
-        save_path = os.path.join(temp_predictions_dir, f'{session_id}_{file.filename}')
-        with open(save_path, 'wb') as buffer:
-            shutil.copyfileobj(file.file, buffer)
-        return save_path
-    except IOError as e:
-        logging.error(f"Failed to save file {file.filename} for session {session_id}: {e}")
-        raise HTTPException(status_code=500, detail=f"Failed to save file due to I/O error.")
-    except Exception as e:
-        logging.error(f"Unexpected error occurred when saving file {file.filename} for session {session_id}: {e}")
-        raise HTTPException(status_code=500, detail=f"An unexpected error occurred when saving the file.")
-
-
-#
