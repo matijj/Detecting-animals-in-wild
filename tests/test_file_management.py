@@ -75,23 +75,6 @@ def file_mock():
     mock.file.read.return_value = b"content of the file"
     return mock
 
-##DOESNT WORK WHEN FROM APP.VIDEO_PROCESSING.SAVE_UPLOADED_FILE IS FOR TEST 
-##WHEN ITS FOR PRODUCTION IT WORKS 
-#def test_save_uploaded_file_success(file_mock, tmp_path):
-#    session_id = "123456"
-#    
-#    with patch('os.path.join', return_value=str(tmp_path / f"{session_id}_{file_mock.filename}")), \
-#         patch('builtins.open', new_callable=MagicMock) as mock_open, \
-#         patch('shutil.copyfileobj') as mock_copyfileobj:
-#        mock_file_handle = mock_open.return_value.__enter__.return_value
-#        
-#        save_path = save_uploaded_file(file_mock, session_id)
-#        
-#        assert save_path == str(tmp_path / f"{session_id}_{file_mock.filename}")
-#        mock_copyfileobj.assert_called_once_with(file_mock.file, mock_file_handle)
-#
-
-
 
 
 def test_save_uploaded_file_io_error(file_mock, tmp_path):
