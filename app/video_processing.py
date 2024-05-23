@@ -82,61 +82,6 @@ def process_video(source_path, user_preferences, is_multiple=False, every_n_fram
 
 
 
-
-
-
-#RADI ALI MENJAS ZBOG MLTIPLE U MAIN NEKAD VRACA DICTIONARY NEKAD SET
-
-#def process_video(source_path, user_preferences, is_multiple=False, every_n_frame=None):
-#    if every_n_frame is None:
-#        every_n_frame = get_every_n_frame()
-#
-#    try:
-#        model, cap, out, output_video_path, detailed_results_path, summary_path = initialize_video_processing(source_path)
-#        frame_counter = 0
-#        all_detailed_results = []
-#
-#        while cap.isOpened():
-#            success, frame = cap.read()
-#            if not success:
-#                break
-#            frame_counter += 1
-#
-#            try:
-#                annotated_frame, detailed_results = process_and_track_frame(frame, model, frame_counter, every_n_frame)
-#                if 'generate_annotated_video' in user_preferences and out is not None:
-#                    out.write(annotated_frame)
-#                all_detailed_results.extend(detailed_results)
-#            except Exception as e:
-#                logging.error(f"Error processing frame {frame_counter} of video {source_path}: {e}")
-#                raise HTTPException(status_code=500, detail=f"Error processing frame {frame_counter}: {str(e)}")
-#
-#    except Exception as e:
-#        logging.error(f"Failed to process video {source_path}: {e}")
-#        raise HTTPException(status_code=500, detail=f"Failed to process video: {str(e)}")
-#    finally:
-#        cap.release()
-#        if out is not None:
-#            out.release()
-#
-#    animals_detected = bool(all_detailed_results)
-#    result = {
-#        "status": "Animals detected" if animals_detected else "No animals detected",
-#        "message": "The uploaded video contains identifiable wildlife species." if animals_detected else "No animals detected in the uploaded video."
-#    }
-#
-#    if is_multiple:
-#        file_metadata = handle_files_for_multiple(source_path, output_video_path, detailed_results_path, summary_path, user_preferences, all_detailed_results)
-#        result['files'] = file_metadata
-#    else:
-#        paths = handle_files_for_single(source_path, output_video_path, detailed_results_path, summary_path, user_preferences, animals_detected, all_detailed_results)
-#        result['paths'] = paths
-#
-#    return result
-
-
-
-
 #2. Video Processing Core Functions
 def save_to_list(data):
     """
