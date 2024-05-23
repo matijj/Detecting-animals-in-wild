@@ -3,9 +3,9 @@ This repository contains a model and a sample application that utilizes object d
 
 
 <div align="center" style="padding: 10px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/racoon-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/turkey-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://github.com/matijj/new-animals-/releases/download/novi-try/deer-GIF.gif" width="30%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/racoon-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/turkey-POKUSAJ.gif" width="30%" style="margin-right: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/deer-GIF.gif" width="30%">
 </div>
 <div align="center" style="padding-bottom: 10px;">
     <p>Videos sourced from the <a href="https://www.youtube.com/@MammalCam" target="_blank">MammalCam YouTube channel</a>.</p>
