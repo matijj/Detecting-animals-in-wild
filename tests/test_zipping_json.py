@@ -8,9 +8,6 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 
 
-
-
-
 from app.zipping_json import save_manifest 
 #SAVE_MANIFEST
 def test_save_manifest_success():
