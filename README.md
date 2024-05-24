@@ -216,9 +216,6 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
 
 
 
-# License
-Animals Wildlife Detection is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
 
 
 
