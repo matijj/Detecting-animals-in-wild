@@ -234,16 +234,17 @@ You can interact with the API using tools like curl or Postman, or by accessing 
 
 ### Endpoint 1: Upload a Video for Wildlife Tracking
 
-
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
-**Description**: Upload a video file mp4/avi
-    
+    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
-##after its done u get 3 links you can downoald and get annotated videos  whole file summary or just the main animals detected
+    <br>
+    <p>After processing is done, you will get 3 links to download: the annotated video, the summary of the entire file, or just the main animals detected.</p>
 </div>
+
+
 
 
 
@@ -261,12 +262,17 @@ You can interact with the API using tools like curl or Postman, or by accessing 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
     <br>
+    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
     <br>
+      <p><strong>Description</strong>: Choose preferences you want.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
+    <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
 </div>
+
+
 
 **URL**: /upload_and_track_multiple/
 
