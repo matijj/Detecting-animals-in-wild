@@ -116,6 +116,21 @@ This will load the web interface where you can upload videos for processing.
 </div>
 
 
+<div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
+    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
+    <p><strong>Detailed Results</p>
+    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
+    <p><strong>Summary</p>
+
+</div>
+
+
+
+
+
+
 **URL**: http://127.0.0.1:8000/upload_and_track/
 
 **Parameters**:
@@ -138,6 +153,9 @@ This will load the web interface where you can upload videos for processing.
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
     <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
 </div>
+
+
+
 
 
 **URL**: http://127.0.0.1:8000/upload_and_track_multiple/
