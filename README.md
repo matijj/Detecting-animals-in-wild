@@ -90,65 +90,57 @@ The dataset consists of images captured under various conditions (day/night, dif
 # Trained Model
 - The trained model can be found in the 'model' directory. This model uses **YOLOv8 small** for detection.
 
-# Usage
-Here is how to run app:
+## Usage
 
- ```
-   uvicorn main:app
- ```
+### Running the Application
+To run the application locally, use the following command:
+
+uvicorn main:app
+
+
+## Accessing the UI
+Open a web browser and navigate to http://127.0.0.1:8000/
+This will load the web interface where you can upload videos for processing.
+
 
 ### Endpoint 1: Upload a Video for Wildlife Tracking
-
 
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
+    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
+    <br>
+    <p>After processing is done, you will get 3 links to download: the annotated video, the summary of the entire file, or just the main animals detected.</p>
 </div>
 
 
-**Description**: Upload a video file for automated wildlife tracking. Specify frame processing frequency.
-
-**URL**: /upload_and_track/
+**URL**: http://127.0.0.1:8000/upload_and_track/
 
 **Parameters**:
 - `file` (UploadFile): The video file in MP4 or AVI format.
 - `every_n_frame` (int): Specifies the frequency of frames to process 
 
 
-**Response**: Buttons to downoald annotated video, detailed results, and summary.
-
-**Example Usage**:
-```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/upload_and_track/' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@/path/to/your/local/repo/tests/test-video.mp4' \
-  -F 'preference=keep_summary, generate_annotated_video, keep_detailed_results' \
-  -F 'every_n_frame=3'
-```
-The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests` directory.
 
 ### Endpoint 2: Upload Multiple Videos
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
     <br>
+    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
     <br>
+      <p><strong>Description</strong>: Choose preferences you want.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
+    <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
 </div>
 
 
-
-
-**Description**: Simultaneously upload and process multiple video files.
-
-**URL**: /upload_and_track_multiple/
+**URL**: http://127.0.0.1:8000/upload_and_track_multiple/
 
 **Parameters**:
 
@@ -159,25 +151,13 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
   - `keep_detailed_results`: Generate detailed results of detections.
 - `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
 
+**Description**: Simultaneously upload and process multiple video files.
+
 
 **Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
 
 **Summary CSV**: This file contains information about each processed video, including the video name, whether animals were detected (boolean), the categories of detected animals, and the count of each animal category.
 
-**Example Usage**:
-```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/upload_and_track_multiple/' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'files=@test-video.mp4;type=video/mp4' \
-  -F 'file=@/path/to/your/local/repo/tests/test-video.mp4' \
-  -F 'file=@/path/to/your/local/repo/tests/test-2-video.mp4' \
-  -F 'preference=keep_summary, generate_annotated_video, keep_detailed_results' \
-  -F 'every_n_frame=3'
-
-```
-The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests` directory.
 
 # Directory
 <pre>
@@ -212,87 +192,3 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
  ├─model
  │  └─YOLOv8_small.pt
 </pre>
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
-## Usage
-
-### Running the Application
-To run the application locally, use the following command:
-
-uvicorn main:app
-
-
-## Accessing the UI
-Open a web browser and navigate to http://127.0.0.1:8000/
-This will load the web interface where you can upload videos for processing.
-## Using the API
-You can interact with the API using tools like curl or Postman, or by accessing the Swagger documentation at http://127.0.0.1:8000/docs.
-
-
-### Endpoint 1: Upload a Video for Wildlife Tracking
-
-<div align="center" style="padding: 10px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
-    <br>
-    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
-    <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
-    <br>
-    <p>After processing is done, you will get 3 links to download: the annotated video, the summary of the entire file, or just the main animals detected.</p>
-</div>
-
-
-
-
-
-
-**URL**: /upload_and_track/
-
-**Parameters**:
-- `file` (UploadFile): The video file in MP4 or AVI format.
-- `every_n_frame` (int): Specifies the frequency of frames to process 
-
-
-
-### Endpoint 2: Upload Multiple Videos
-
-<div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
-    <br>
-    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
-    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
-    <br>
-      <p><strong>Description</strong>: Choose preferences you want.</p>
-    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
-    <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
-</div>
-
-
-
-**URL**: /upload_and_track_multiple/
-
-**Parameters**:
-
-- `files` (List[UploadFile]): Video files in MP4 or AVI format.
-- `preference` (str): Options include:
-  - `keep_summary`: Generate a summary of detections.
-  - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
-  - `keep_detailed_results`: Generate detailed results of detections.
-- `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
-
-**Description**: Simultaneously upload and process multiple video files.
-
-**URL**: /upload_and_track_multiple/
-
-**Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
-
-**Summary CSV**: This file contains information about each processed video, including the video name, whether animals were detected (boolean), the categories of detected animals, and the count of each animal category.
-
-
-
-
