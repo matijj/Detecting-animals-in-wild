@@ -214,7 +214,78 @@ The `test-video.mp4` and `test-video-2.mp4` files are located inside the `tests`
 </pre>
 
 
+------------------------------------------------------------------------------------------------------------------------
 
+
+## Usage
+
+### Running the Application
+To run the application locally, use the following command:
+
+uvicorn main:app
+
+
+## Accessing the UI
+Open a web browser and navigate to http://127.0.0.1:8000/
+This will load the web interface where you can upload videos for processing.
+## Using the API
+You can interact with the API using tools like curl or Postman, or by accessing the Swagger documentation at http://127.0.0.1:8000/docs.
+
+
+### Endpoint 1: Upload a Video for Wildlife Tracking
+
+
+<div align="center" style="padding: 10px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
+    <br>
+**Description**: Upload a video file mp4/avi
+    
+    <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
+##after its done u get 3 links you can downoald and get annotated videos  whole file summary or just the main animals detected
+</div>
+
+
+
+
+**URL**: /upload_and_track/
+
+**Parameters**:
+- `file` (UploadFile): The video file in MP4 or AVI format.
+- `every_n_frame` (int): Specifies the frequency of frames to process 
+
+
+
+### Endpoint 2: Upload Multiple Videos
+
+<div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
+    <br>
+    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
+    <br>
+    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
+</div>
+
+**URL**: /upload_and_track_multiple/
+
+**Parameters**:
+
+- `files` (List[UploadFile]): Video files in MP4 or AVI format.
+- `preference` (str): Options include:
+  - `keep_summary`: Generate a summary of detections.
+  - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
+  - `keep_detailed_results`: Generate detailed results of detections.
+- `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
+
+**Description**: Simultaneously upload and process multiple video files.
+
+**URL**: /upload_and_track_multiple/
+
+**Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
+
+**Summary CSV**: This file contains information about each processed video, including the video name, whether animals were detected (boolean), the categories of detected animals, and the count of each animal category.
 
 
 
