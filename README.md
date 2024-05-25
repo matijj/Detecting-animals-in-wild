@@ -157,7 +157,11 @@ This will load the web interface where you can upload videos for processing.
     <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
 </div>
 
-
+<div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
+    <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
+    <p><strong>Summary for all videos processed</p>
+</div>
 
 
 
