@@ -159,7 +159,7 @@ This will load the web interface where you can upload videos for processing.
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
-    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
+    <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/whole-summary-5.jpg" width="70%">
     <p><strong>Summary for all videos processed</p>
 </div>
 
