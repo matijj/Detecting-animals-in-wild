@@ -110,12 +110,14 @@ This will load the web interface where you can upload videos for processing.
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
-    <p>Choose how many frames to be processed.Less framess more accurate, more frames more speed(default 3)</p>
+<!--     <p>Choose how many frames to be processed.Less framess more accurate, more frames more speed(default 3)</p> -->
     <p>Upload a video file in MP4 or AVI format.</p>
+    <p>Choose the number of frames to be processed. Fewer frames result in more accuracy, more frames increase processing speed (default is 3).</p>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
     <br>
-    <p>After processing is done, you will get 3 links to download: the annotated video, the summary of the entire file, or just the main animals detected.</p>
+    <p>After processing is complete, you will receive three download links: the annotated video, a detailed summary of the entire file, and a list of the main animals detected.</p>
+
 </div>
 
 
@@ -123,10 +125,10 @@ This will load the web interface where you can upload videos for processing.
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
-    <p>Detailed Results (predictions from each frame)</p>
+    <p>Detailed Results: Predictions from each frame</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-summary.jpg" width="70%">
-    <p>Summary(showing only the most picked category for each animal tracked)</p>
+    <p>Summary: Showing only the most frequently decided category for each tracked animal</p>
 
 </div>
 
