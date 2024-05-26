@@ -107,6 +107,15 @@ This will load the web interface where you can upload videos for processing.
 
 ### Endpoint 1: Upload a Video for Wildlife Tracking
 
+**URL**: http://127.0.0.1:8000/upload_and_track/
+
+**Parameters**:
+- `file` (UploadFile): The video file in MP4 or AVI format.
+- `every_n_frame` (int): Specifies the frequency of frames to process 
+
+
+
+
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
@@ -122,6 +131,10 @@ This will load the web interface where you can upload videos for processing.
 
 
 
+
+
+
+
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
@@ -134,15 +147,27 @@ This will load the web interface where you can upload videos for processing.
 
 
 
-**URL**: http://127.0.0.1:8000/upload_and_track/
-
-**Parameters**:
-- `file` (UploadFile): The video file in MP4 or AVI format.
-- `every_n_frame` (int): Specifies the frequency of frames to process 
 
 
 
 ### Endpoint 2: Upload Multiple Videos
+
+**URL**: http://127.0.0.1:8000/upload_and_track_multiple/
+
+**Parameters**:
+
+- `files` (List[UploadFile]): Video files in MP4 or AVI format.
+- `preference` (str): Options include:
+  - `keep_summary`: Generate a summary of detections.
+  - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
+  - `keep_detailed_results`: Generate detailed results of detections.
+- `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
+
+**Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
+
+**Summary CSV**: This file contains information about each processed video, including the video name, whether animals were detected (boolean), the categories of detected animals, and the count of each animal category.
+
+
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
@@ -169,20 +194,7 @@ This will load the web interface where you can upload videos for processing.
 
 
 
-**URL**: http://127.0.0.1:8000/upload_and_track_multiple/
 
-**Parameters**:
-
-- `files` (List[UploadFile]): Video files in MP4 or AVI format.
-- `preference` (str): Options include:
-  - `keep_summary`: Generate a summary of detections.
-  - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
-  - `keep_detailed_results`: Generate detailed results of detections.
-- `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
-
-**Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
-
-**Summary CSV**: This file contains information about each processed video, including the video name, whether animals were detected (boolean), the categories of detected animals, and the count of each animal category.
 
 
 # Directory
