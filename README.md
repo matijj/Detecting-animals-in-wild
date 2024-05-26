@@ -154,13 +154,16 @@ This will load the web interface where you can upload videos for processing.
       <p>Choose how many frames to be processed(Same as in first one)</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
-    <p>You will receive a zip file with two folders: one for videos with no animals detected, and one for videos with animals detected. The root level of the zip file will also contain a comprehensive summary.csv file.</p>
+    <p>
+       After completion, you will receive a zip file containing two folders: one for videos where animals were detected and another for videos without them. Additionally, 
+  the root directory of the zip file will include a detailed summary.csv file.
+    </p>
 </div>
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/whole-summary-5.jpg" width="70%">
-    <p>Summary for all videos processed</p>
+    <p>A summary for all videos processed</p>
 </div>
 
 
