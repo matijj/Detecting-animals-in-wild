@@ -95,12 +95,11 @@ The dataset consists of images captured under various conditions (day/night, dif
 ### Running the Application
 To run the application locally, use the following command:
 
-bash
 ```
 uvicorn main:app
 ```
 
-## Accessing the UI
+### Accessing the UI
 Open a web browser and navigate to http://127.0.0.1:8000/
 This will load the web interface where you can upload videos for processing.
 
@@ -112,7 +111,6 @@ This will load the web interface where you can upload videos for processing.
 **Parameters**:
 - `file` (UploadFile): The video file in MP4 or AVI format.
 - `every_n_frame` (int): Specifies the frequency of frames to process 
-
 
 
 
@@ -131,10 +129,6 @@ This will load the web interface where you can upload videos for processing.
 
 
 
-
-
-
-
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
@@ -144,9 +138,6 @@ This will load the web interface where you can upload videos for processing.
     <p>Summary: Showing only the most frequently decided category for each tracked animal</p>
 
 </div>
-
-
-
 
 
 
