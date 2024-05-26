@@ -117,7 +117,6 @@ This will load the web interface where you can upload videos for processing.
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
     <br>
     <p>After processing is complete, you will receive three download links: the annotated video, a detailed summary of the entire file, and a list of the main animals detected.</p>
-
 </div>
 
 
@@ -131,9 +130,6 @@ This will load the web interface where you can upload videos for processing.
     <p>Summary: Showing only the most frequently decided category for each tracked animal</p>
 
 </div>
-
-
-
 
 
 
