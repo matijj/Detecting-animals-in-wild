@@ -95,8 +95,10 @@ The dataset consists of images captured under various conditions (day/night, dif
 ### Running the Application
 To run the application locally, use the following command:
 
+bash
+```
 uvicorn main:app
-
+```
 
 ## Accessing the UI
 Open a web browser and navigate to http://127.0.0.1:8000/
@@ -108,7 +110,7 @@ This will load the web interface where you can upload videos for processing.
 <div align="center" style="padding: 10px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-start.jpg" width="50%">
     <br>
-    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
+    <p>Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
     <br>
@@ -117,15 +119,13 @@ This will load the web interface where you can upload videos for processing.
 
 
 
-
-
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-detailed-results.jpg" width="70%">
-    <p><strong>Detailed Results</p>
+    <p>Detailed Results (predictions from each frame)</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/coyote-walk-summary.jpg" width="70%">
-    <p><strong>Summary</p>
+    <p>Summary(showing only the most picked category for each animal tracked)</p>
 
 </div>
 
@@ -147,20 +147,20 @@ This will load the web interface where you can upload videos for processing.
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-start.jpg" width="50%">
     <br>
-    <p><strong>Description</strong>: Upload a video file in MP4 or AVI format.</p>
+    <p>Upload a video file in MP4 or AVI format.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-end.jpg" width="50%">
     <br>
-      <p><strong>Description</strong>: Choose preferences you want.</p>
+      <p> Choose preferences you want.</p>
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/2-endpoint-zip-output.jpg" width="70%">
-    <p><strong>Description</strong>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
+    <p>Get zip with 2 folders 1 for no animals detected 1 for aniamls deteced and whole summary.csv at root lvl too .</p>
 </div>
 
 <div align="center" style="padding: 10px; margin-top: 30px; margin-bottom: 20px;">
     <hr style="border-top: 1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/whole-summary-5.jpg" width="70%">
-    <p><strong>Summary for all videos processed</p>
+    <p>Summary for all videos processed</p>
 </div>
 
 
