@@ -116,7 +116,7 @@ This will load the web interface where you can upload videos for processing.
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
     <br>
-    <p>After processing is complete, you will receive three download links: the annotated video, a detailed summary of the entire file, and a list of the main animals detected.</p>
+    <p>Once processing is complete, you will receive three download links: the annotated video, a detailed summary of the entire file, and a list of the main animals detected.</p>
 </div>
 
 
