@@ -150,7 +150,7 @@ This will load the web interface where you can upload videos for processing.
   - `keep_summary`: Generate a summary of detections.
   - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
   - `keep_detailed_results`: Generate detailed results of detections.
-- `every_n_frame` (int): Specifies the frequency of frames to process (e.g., every 3 frames).
+- `every_n_frame` (int): Specifies the frequency of frames to process (default is 3).
 
 **Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
 
