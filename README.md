@@ -16,8 +16,6 @@ This repository contains a model and a sample application that utilizes object d
 The "Detecting Animals in Wildlife" project is designed to automate the identification and tracking of animals in wildlife footage. Utilizing state-of-the-art YOLOv8 object detection technology, this application aims to enhance the efficiency of wildlife monitoring by saving a significant amount of time for individuals who would otherwise need to watch the camera footage manually.
 
 
-
-
 # Requirements
 **Python Version**: 3.10.12
 
@@ -44,7 +42,7 @@ The dataset is created by me. You can access the dataset [here](https://universe
 
 
 ## Feedback Request
-The dataset consists of images captured under various conditions (day/night, different seasons, angles), which may affect detection accuracy. If you see any false predictions, please report them. I will update model based on feedback. 
+The dataset consists of images captured under various conditions (day/night, different seasons, angles), which may affect detection accuracy. If you see any inaccuracies in predictions, please report them. I will update model based on feedback. 
 
 
 # Kind of animals (for now)
