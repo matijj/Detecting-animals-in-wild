@@ -109,7 +109,7 @@ This will load the web interface where you can upload videos for processing.
 
 **Parameters**:
 - `file` (UploadFile): The video file in MP4 or AVI format.
-- `every_n_frame` (int): Specifies the frequency of frames to process 
+- `every_n_frame` (int): This parameter controls the frequency of frames analyzed by the model. Setting this parameter allows you to balance processing speed and detection accuracy. A lower value means the model analyzes more frames, leading to higher accuracy but slower processing times. The default setting is 3, yielding great results under most conditions.
 
 
 
@@ -118,7 +118,7 @@ This will load the web interface where you can upload videos for processing.
     <br>
 <!--     <p>Choose how many frames to be processed.Less framess more accurate, more frames more speed(default 3)</p> -->
     <p>Upload a video file in MP4 or AVI format.</p>
-    <p>Choose the number of frames to be processed. Fewer frames result in more accuracy, more frames increase processing speed (default is 3).</p>
+    <p>Choose the number of frames to be processed. Fewer frames result in more accuracy, more frames increase processing speed .</p>
     <hr style="border-top: 0.1px solid #ccc; margin-top: 20px; margin-bottom: 20px;">
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/1-endpoint-end.jpg" width="50%">
     <br>
@@ -151,7 +151,9 @@ This will load the web interface where you can upload videos for processing.
   - `keep_summary`: Generate a summary of detections.
   - `generate_annotated_video`: Create an annotated video with generated bounding boxes.
   - `keep_detailed_results`: Generate detailed results of detections.
-- `every_n_frame` (int): Specifies the frequency of frames to process (default is 3).
+- `every_n_frame` (int): This parameter controls the frequency of frames analyzed by the model. Setting this parameter allows you to balance processing speed and detection accuracy. A lower value means the model analyzes more frames, leading to higher accuracy but slower processing times. The default setting is 3, yielding great results under most conditions.
+
+
 
 **Response**: A JSON response containing the session ID, paths to the processed files (organized based on detection results), and a summary in CSV and Excel format. Errors are also returned in the response if any occur during processing.
 
@@ -181,10 +183,6 @@ This will load the web interface where you can upload videos for processing.
     <img src="https://github.com/matijj/new-animals-/releases/download/images-for-readme/whole-summary-5.jpg" width="70%">
     <p>A summary for all videos processed</p>
 </div>
-
-
-
-
 
 
 # Directory
