@@ -88,10 +88,11 @@ The dataset consists of images captured under various conditions (day/night, dif
 # Trained Model
 - The trained model can be found in the 'model' directory. This model uses **YOLOv8 small** for detection.
 
-## Usage
+# Usage
 
 ### Running the Application
-To run the application locally, use the following command:
+
+To start the web application on your local machine, you'll need to run the following command in your terminal. Ensure you are in the project's root directory where main.py is located:
 
 ```
 uvicorn main:app
